@@ -36,7 +36,7 @@ setSearchValue(value)
               </button>
         <button className="form__box-btn">
             <img src={searchIcon} alt=""  className="form__box-img" />
-        </button>git confi
+        </button>
         </div>
         </div>
         
