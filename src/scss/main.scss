@@ -1,0 +1,302 @@
+body{
+    background: rgb(18, 18, 29);
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    height: 70px;
+    background: #101733;
+    border-radius: 15px;
+    margin-top: 30px;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__title{
+        font-size: 24px;
+        color: white;
+    }
+
+}
+
+.form{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    &__box{
+display: flex;
+gap: 10px;
+        &-btn{
+          border-radius: 50%;
+          border: none;
+          background:  rgb(105, 157, 255);
+          width: 40px;
+          height: 40px;
+          color: white;
+          font-size: 20px;
+          
+        }
+        &-input{
+           width: 200px;
+           height: 40px;
+            border: none;
+            outline: none;
+            background: rgb(105, 157, 255);
+            border-radius: 20px;
+            padding: 0 25px;
+            
+        }::placeholder{
+            color: white;
+        }
+        &-buttons{
+            display: flex;
+gap: 10px;
+        }
+    }
+}
+
+.right{
+    position: sticky;
+top:0;
+margin: 0 auto;
+&__box{
+    cursor: pointer;
+}
+    &__title{
+color: white;
+font-size: 24px;
+margin-left: 10px;
+
+    }
+    border: 5px solid  rgb(105, 157, 255);
+display: flex;
+flex-direction: column;
+    &__mainbox{
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        margin-top: 60px;
+    }
+    &__btn{
+        border: 2px solid  rgb(105, 157, 255);
+        background:  rgb(105, 157, 255);
+            border-radius: 7px;
+            margin-top: 10px;
+            transition: 0.3s;
+            width: 200px;
+            height: 40px;
+            color: white;
+            font-size: 17px;
+    }
+    &__box{
+       background: #101733;
+       box-shadow: 0 2px 8px rgb(48, 17, 66);
+        &-img{
+           display: block;
+           margin: 0 auto;
+            width: 200px;
+            height: 150px;
+        }
+        &-img2{
+            background: black;
+            width: 200px;
+            height: 150px;
+        }
+      &-dec{
+        &-title{
+            color: white;
+            font-size: 24px;
+        }
+        &-text{
+            color: rgb(48, 17, 66);
+        }
+        &-price{
+            color: rgb(129, 39, 39);
+        }
+        &-dprice{
+            color: green;
+        }
+        &-span{
+            color: rgb(48, 17, 66);
+        }
+      }
+    }
+}
+
+.sidebar{
+    width: 10%;
+    height: 100vh;
+    padding: 30px 30px 52px 30px;
+    position: sticky;
+    top: 0;
+    background: #101733;
+    box-shadow: 0 2px 8px rgb(48, 17, 66);
+    &__title{
+        font-size: 20px;
+        color: rgb(48, 17, 66);
+    }
+    &__links{
+        font-size: 15px;
+        color: white
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+       gap: 20px;
+    }
+}
+
+.home{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    li{
+        &.disabled{
+            display: none;
+        }
+        &.selected{
+            a{
+                background: white;
+                color: rgb(105, 157, 255);
+            }
+        }
+        a{
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            background: rgb(105, 157, 255);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background: white;
+            }
+        }
+    }
+}
+.back{
+    width: 100px;
+    height: 30px;
+  background: rgb(105, 157, 255);
+  border: none;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.product{
+
+   max-width: 1200px;
+   width: 100%;
+ margin: 0 auto;
+
+
+    &__all{
+       display: flex;
+gap: 50px;
+background: #101733;
+border-radius: 20px;
+padding: 30px;
+object-fit: contain;
+box-shadow: 0 10px 10px rgb(48, 17, 66);
+    }
+    &__right{
+        width: 400px;
+        &-img{
+            margin-top: 30px;
+           border-radius: 20px;
+            background: black;
+            width: 100%;
+            max-width: 500px;
+            object-fit: contain;
+        }
+    }
+    &__left{
+flex: 1;
+&-title{
+    margin-top: 20px;
+    font-size: 36px;
+    color: white;
+}
+&-text{
+    color: purple;
+    margin-top: 25px;
+    font-size: 20px;
+}
+&-price{
+color: red;
+margin: 10px 0;
+font-size: 25px;
+text-align: center;
+}
+
+&-dprice{
+    color: green;
+    margin: 10px 0;
+font-size: 25px;
+text-align: center;
+}
+&-brand{
+    color: white;
+    margin-top: 50px;
+}
+&-span{
+    color: white;
+    margin-top: 50px;
+}
+    }
+
+   
+}
+
+.feedback{
+    background: #101733;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+
+    &__date{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-size: 36px;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    &__rating{
+        &-name{
+color: purple;
+        }
+        &-span{
+            color: yellow;
+        }
+        &-rating{
+            color: white;
+        }
+        &-span2{
+           color: white;
+        }
+    }
+}
