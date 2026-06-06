@@ -1,6 +1,6 @@
 import React from 'react'
 import searchIcon from '/public/images/search.svg'
-import cartIcon from '/public/images/cart.svg'
+
 import { useState } from 'react'
 import { useProduct } from '../store/useProduct'
 
@@ -28,7 +28,9 @@ setSearchValue(value)
             className="form__box-input" 
             placeholder='Search...'
             value={value}
-            onChange={(event) => {setValue(event.target.value)}}
+            onChange={(event) => {
+              setValue(event.target.value); setSearchValue(event.target.value)
+            }}
             />
             <div className="form__box-buttons">
             <button className="form__box-btn" onClick={() => reset()}>
